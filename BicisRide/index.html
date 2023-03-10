@@ -1,0 +1,110 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BicisRide</title>
+        <link rel="stylesheet" href="bici.css" >
+    </head>
+    <style>
+        body{
+            background-color: bisque;
+        }
+        .center {
+        text-align: center;
+      }
+      .left{
+        text-align: left;
+      }
+
+
+    </style>
+    <meta name= "viewport" content= "width=device-width, initial-scale=1">
+    <style>
+     .btn{
+       border: none;
+       background-color: inherit;
+       padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+      display: inline-block;}
+     .success:hover {
+      background-color: #c85757;
+       color: white;}
+     .success {color: #c85757;}
+    </style>
+    
+    <body style="background-color:#d2d6bf;">    
+     <div class="center">
+        <img id="Logo_1" src="Logo.jpg" alt="Logo"  ></img>  
+        <br>
+        <button  class= "btn success">Inicio</button>
+        <button class= "btn success"> Productos de interes</button>
+        <button class= "btn success">Links relacionados</button>
+        <button  class= "btn success">Comentarios    </button>
+        <h2 id="Tit">Productos de interes</h2>
+        <section >
+           
+            <article class="ar">
+                <h1>Bicicleta de fibra de carbó</h1>
+                <img class="center" id="Bici_1" src="bici2.jpg" alt="Bici2" width="150" height="150"></img>
+                <p></p>
+                <a href="https://www.amazon.es/SAVADECK-Bicicleta-Phantom5-0-bicicletas-velocidade/dp/B0BFR78NSM/ref=sr_1_2_sspa?keywords=bicicleta%2Bcarbono&qid=1673623959&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&psc=1">Ampliar informació</a> 
+            </article>
+            
+            <article class="ar">
+                <h1>Bicicleta electrica</h1>
+                <img class="center" id="Bici_1" src="bici3.jpg" alt="Bici3" width="150" height="150"></img>
+                <p></p>
+                <a href="https://www.amazon.es/F-lli-Schiano-Bicicleta-el%C3%A9ctrica-Negro-Azul/dp/B07X7XDH6N/ref=sr_1_9?crid=3PFEMAPZTWJVW&keywords=bicicleta%2Belectrica&qid=1673623985&sprefix=bicicleta%2Bele%2Caps%2C151&sr=8-9&th=1">Ampliar informació</a>
+            </article>
+            <article class="ar">
+                <h1>Bicicleta de montaña</h1>
+                <img class="center" id="Bici_1" src="bici4.jpg" alt="Bici3" width="150" height="150"></img>
+                <p></p>
+                <a href="https://www.amazon.es/TopMate-Bicicleta-Amortiguador-7-Velocidades-Portavasos/dp/B0BKP56ZV3/ref=sr_1_2_sspa?crid=15ERQD0AH3F1Q&keywords=bicicleta+monta%C3%B1a&qid=1673624005&sprefix=bicicleta+mo%2Caps%2C157&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">Ampliar informació</a>
+            </article>  
+        </section>
+        
+        <aside>
+            <nav>
+                <h1 id="lt">Links relacionados</h1>
+                    
+                <ul>
+                    
+                    <li><a href="https://www.amazon.es/s?k=bicicletas&__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3R5IRCQ9WMCQL&sprefix=bicicletas%2Caps%2C306&ref=nb_sb_noss_1">Bicicletas de Amazon</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://www.decathlon.es/es/browse/c0-deportes/c1-ciclismo/c2-bicicletas/_/N-uuyrx7">Bicicletas de Decathlon</a></li>
+                </ul>
+            </nav>
+
+        </aside>
+        
+    <h2 id="lt">Seccion de Comentarios </h2>
+    <div class="left">
+    <form  action="#" target="" method="get" name="formDatosPersonales">
+
+        <label class="left"  for="nombre">Nombre</label>
+        <input class="left"  type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre"/>
+    <br>
+        <label class="left" for="email" >Email</label>
+        <input class="left" type="email" name="email" id="email" placeholder=" Escribe tu email" required />
+        <h4>Tipo de Comentario         <select>
+            <option>------- </option>
+            <option>Queja</option>
+            <option>Opinion constructiva</option>
+            <option>Comentario</option>
+            </select></h4>
+        <label class="left" for="mensaje">Comentario</label>
+        <textarea class="left" name="mensaje" for="mensaje" placeholder="Escribe tu comentario" ></textarea>
+        <br>
+        <input type="submit" name="enviar" value="Enviar datos"/>
+    </form>
+</div>
+            <footer id="com">&copy;BicisRide</footer>
+        </html>
+    </body>
+
+    
