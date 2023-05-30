@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<htm1>
+<body>
+
+<script>
+let a=
+let b=
+alert (ab);
+
+</script>
+
+10;
+
+</body>
+</html>
