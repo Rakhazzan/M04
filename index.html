@@ -1,71 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="ca">
 <head>
-	<title>Forum d'activitats</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-NrV7Gh0jrXpcaTU1GROfB8vQu0lLZPzy2ZwCcEh8Nv/j++eB1i9e/yV7kd+JJlBdV7T/iRbfTmgZ7DEr22fNJw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <title>Portafoli de Projectes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
 </head>
 <body>
-	<header>
-		<h1>Forum d'activitats</h1>
-	</header>
-	<div class="container">
-		<button class="menu-toggle" aria-label="Menu">☰</button>
-		<nav id="menu">
-		  <ul>
-			<li><a href="#estudis">Estudis</a></li>
-			<li><a href="#curriculum">Curriculum</a></li>
-			<li><a href="#projectes">Projectes</a></li>
-			<li><a href="#contacte">Contacte</a></li>
-		  </ul>
-		</nav>
-	  </div>	
-	
-	  
-	<main>
-		<section id="pdf">
-			<h2 id="estudis">Estudis</h2>
-		<ul>
-		  <li>Grau Superior de Desenvolupament d'Aplicacions Multiplataforma</li>
-		  <li>Batxillerat Cientifico-Tecnologic</li>
-		</ul>
-			<h2 id="curriculum">Currículum vitae</h2>
-			<p>Fes clic al següent enllaç per descarregar el currículum vitae:</p>
-			<a href="pdf1.pdf" download>Descargar currículum</a>
-		</section>
-		<section id="projectes">
-			<h2>Projectes</h2>
-			<ul id="projectes-list">
-			  <li>
-				<a href="./BicisRide/index.html">Activitat 1</a>
-			  </li>
-			  <li>
-				<a href="./Music box/MusicBox.html">Activitat 2</a>
-			  </li>
-			  <li>
-				<a href="./Viladoms de dalt/Viladoms de dalt.html">Activitat 3</a>
-			  </li>
-			  <li>
-				<a href="./Whac-A-Mole/Molee.html">Activitat 4</a>
-			  </li>
-				 <li>
-				<a href="./Museu/VR.html">Activitat 5</a>
-			  </li>
-				 <li>
-				<a href="./Quizz/Quizz.html">Quizz</a>
-			  </li>
-				<li>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/ciOwsb76YAI?si=tcYUHmQbTeHQYdwX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-			  </li>
-			</ul>
-		</section>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="navbar-brand">
+                <h1>Mohamed Akhazzan</h1>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="navbar-menu">
+                <a href="#estudis">Estudis</a>
+                <a href="#curriculum">Currículum</a>
+                <a href="#projectes">Projectes</a>
+                <a href="#contacte">Contacte</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <section id="estudis">
+            <h2>Estudis</h2>
+            <ul>
+                <li>Grau Superior de Desenvolupament d'Aplicacions Multiplataforma</li>
+                <li>Batxillerat Cientifico-Tecnologic</li>
+            </ul>
+        </section>
+
+        <section id="curriculum">
+            <h2>Currículum Vitae</h2>
+            <a href="pdf1.pdf" class="btn" download>
+                <i class="fas fa-download"></i> Descarregar Currículum
+            </a>
+        </section>
+
+        <section id="projectes">
+            <h2>Projectes</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Activitat 1</h3>
+                    <a href="./BicisRide/index.html" class="btn">Veure Projecte</a>
+                </div>
+                <div class="project-card">
+                    <h3>Activitat 2</h3>
+                    <a href="./Music box/MusicBox.html" class="btn">Veure Projecte</a>
+                </div>
+                <div class="project-card">
+                    <h3>Activitat 3</h3>
+                    <a href="./Viladoms de dalt/Viladoms de dalt.html" class="btn">Veure Projecte</a>
+                </div>
+                <div class="project-card">
+                    <h3>Activitat 4</h3>
+                    <a href="./Whac-A-Mole/Molee.html" class="btn">Veure Projecte</a>
+                </div>
+                <div class="project-card">
+                    <h3>Activitat 5</h3>
+                    <a href="./Museu/VR.html" class="btn">Veure Projecte</a>
+                </div>
+                <div class="project-card">
+                    <h3>Quizz</h3>
+                    <a href="./Quizz/Quizz.html" class="btn">Veure Projecte</a>
+                </div>
+            </div>
+            
+            <div class="video-container" style="margin-top: 1rem; text-align: center;">
+                <iframe width="100%" height="450" src="https://www.youtube.com/embed/ciOwsb76YAI?si=tcYUHmQbTeHQYdwX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
         <section id="contacte">
-			<h2>Contacte</h2>
-			<p>Podeu contactar amb mi a través del correu electrònic:</p>
-			<p><a href="mohamedakhazzanakhazzan@gmail.com">mohamedakhazzanakhazzan@gmail.com</a></p>
-		  </section>
-	</main>
+            <h2>Contacte</h2>
+            <p>Podeu contactar amb mi a través del correu electrònic:</p>
+            <a href="mailto:mohamedakhazzanakhazzan@gmail.com" class="btn">
+                <i class="fas fa-envelope"></i> Enviar Correu
+            </a>
+        </section>
+    </main>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.navbar-menu').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
